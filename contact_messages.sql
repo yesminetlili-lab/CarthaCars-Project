@@ -1,0 +1,10 @@
+USE luxury_cars;
+
+CREATE TABLE IF NOT EXISTS messages (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(150) NOT NULL,
+    email VARCHAR(150) NOT NULL,
+    telephone VARCHAR(30) NULL,
+    message TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
